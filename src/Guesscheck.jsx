@@ -5,17 +5,18 @@ function Guesscheck( {secretnum,term}) {
   let result;
 
   if (term){
-    if(term > secretnum){
+    const numericterm = Number(term)
+    if (numericterm > secretnum) {
       result = "Higher";
     }
-    else if(term < secretnum){
+    else if (numericterm < secretnum) {
       result = "Lower";
     }
-    else if( term == secretnum){
-      result = "Yipee! correct";
+    else if ( numericterm === secretnum) {
+      result = "Yippee! correct";
   
     }
-    else{
+    else {
       result = "Enter valid input";
     }
   }
