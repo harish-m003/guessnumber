@@ -17,7 +17,7 @@ function Guesscheck( {secretnum,term}) {
   
     }
     else {
-      result = "Enter valid input";
+      result = "Enter Valid Number";
     }
   }
   return (
